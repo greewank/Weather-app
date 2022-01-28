@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 1.4rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+}
+
+.main-container {
+  border: 1px solid black;
+  border-radius: 0.4rem;
+  padding: 1.8rem 1.6rem;
+  background-color: rgba(0, 0, 0, 0.219);
+  max-width: 100%;
+  max-width: 550px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.7rem;
+}
+input.search-container {
+  padding: 0.1rem 2.1rem;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  background: transparent;
+  border: transparent;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.308);
+  transition: 0.3s all linear;
+  max-width: 70%;
+  height: 45px;
+}
+.search-container:hover {
+  box-shadow: 4px 5px 6px grey;
+}
+
+.btn-container {
+  background: transparent;
+  border: transparent;
+  border-radius: 0.3rem;
+  color: green;
+  padding: 0.4rem 0.3rem;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+.btn-container:hover {
+  color: darkgreen;
+  box-shadow: 4px 5px 6px grey;
+}
+.description {
+  text-transform: capitalize;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 30px;
+  position: relative;
+}
+
+.weather.loading ::after {
+  visibility: visible;
+  /* content: "Loading....."; */
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
